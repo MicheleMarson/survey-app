@@ -1,0 +1,26 @@
+.toggleBtn {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  width: 40px;
+  height: 19px;
+  margin-right: 4px;
+  padding: 1px;
+  position: relative;
+}
+
+.toggleBtn__ball {
+  position: absolute;
+  border-radius: 50%;
+  background: lightgray;
+  height: 15px;
+  width: 15px;
+  left: 1px;
+  transition: 0.2s ease-in;
+}
+
+.edit__button.enable .toggleBtn__ball {
+  position: absolute;
+  left: 22px;
+  background: var(--orange-dark);
+}

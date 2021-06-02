@@ -1,13 +1,68 @@
+:root {
+  --orange-dark: #fcc42b;
+  --orange-light: #fff4d5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  color: #343e47;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.app {
+  margin: 1.5rem;
+}
+
+.app__ankete {
+  border-left: 4px solid var(--orange-dark);
+  padding-left: 1rem;
+  font-size: 1.6rem;
+
+  font-weight: 600;
+}
+
+.app__breadcrums {
+  display: flex;
+}
+
+.app__title {
+  position: relative;
+  flex-direction: column;
+  color: var(--orange-dark);
+}
+
+.app__breadcrums li {
+  list-style: none;
+  padding-left: 6px;
+  margin-top: 2rem;
+}
+
+.app__breadcrums li:not(:last-child)::after {
+  content: " /";
+}
+
+.title {
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--orange-dark);
 }

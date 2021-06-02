@@ -1,0 +1,99 @@
+.edit__required {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid #eeeeee;
+}
+
+.edit__button {
+  display: flex;
+}
+/* 
+.edit__button:hover p {
+  color: #343e47;
+} */
+
+.edit__saveBtn button {
+  border: none;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 1.3px;
+  font-size: 14px;
+  background: none;
+  margin: 0 10px;
+}
+
+.edit__saveBtn--save {
+  color: var(--orange-dark);
+}
+
+.edit__saveBtn button::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  width: 0%;
+  opacity: 0;
+  bottom: -3px;
+  background: var(--orange-dark);
+  transition: 0.2s ease-in;
+}
+
+.edit__saveBtn button:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.edit__button--multy {
+  margin-top: 1.5rem;
+}
+
+.edit__question {
+  display: flex;
+  padding: 20px;
+  margin-left: 10vw;
+  flex-direction: column;
+}
+
+.edit__question div {
+  display: flex;
+}
+
+.edit__button {
+  color: #343e47;
+  margin-right: 32px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in;
+}
+
+.edit__button:hover .MuiSvgIcon-root {
+  background: var(--orange-light);
+  color: var(--orange-dark);
+}
+
+.edit__button .MuiSvgIcon-root {
+  background: var(--orange-dark);
+  margin-right: 6px;
+  border-radius: 50%;
+  color: white;
+  transition: 0.2s ease-in;
+}
+
+.edit__button.disabled .MuiSvgIcon-root {
+  background: #dddddd;
+  color: white;
+}
+.edit__button.disabled:hover {
+  color: #6d6d6d;
+  cursor: not-allowed;
+}
+
+.edit__button.disabled p {
+  color: #6d6d6d;
+}

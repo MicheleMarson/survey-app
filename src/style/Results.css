@@ -1,0 +1,130 @@
+.results {
+  margin: auto;
+  width: 60vw;
+}
+
+.results__question {
+  margin: auto;
+  width: 80%;
+}
+
+.results__title {
+  margin-bottom: 2rem;
+  margin-top: 44px;
+  text-align: center;
+  color: var(--orange-dark);
+  font-size: 2rem;
+}
+
+.results__dataGraph {
+  border-left: 2px solid gray;
+  border-right: 1px solid lightgray;
+  border-bottom: 2px solid gray;
+  width: 100%;
+  position: relative;
+  /* max-width: 630px; */
+}
+
+.results__graph {
+  display: flex;
+  margin-left: 48px;
+}
+
+.results__data {
+  margin: 5rem 0 5rem 48px;
+  /* margin-left: 48px; */
+}
+
+.results__head,
+.results__box {
+  padding: 10px 16px;
+  display: flex;
+}
+
+.results__head {
+  background: #eee;
+  border-radius: 4px;
+  justify-content: space-evenly;
+}
+
+.results__head p {
+  width: 100%;
+}
+
+.results__box {
+  justify-content: space-around;
+}
+
+.results__boxData {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results__box div {
+  width: 100%;
+}
+
+.results__data > div:not(:first-child) {
+  border-bottom: 1px solid lightgray;
+}
+
+.results__boxQuestion {
+  text-transform: capitalize;
+}
+
+.results__answers {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.results__answers p {
+  margin: 20px 6px 10px;
+  align-self: flex-end;
+}
+
+.results__lines {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.results__lines span {
+  height: 100%;
+  background: lightgray;
+  width: 1px;
+}
+
+.results__percent {
+  position: absolute;
+  display: flex;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+.result__questionQuestion span {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--orange-dark);
+}
+
+.result__questionQuestion {
+  font-size: 1rem;
+  padding: 5px 4px;
+  margin-left: 4px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1220px) {
+  .results__question {
+    width: 100%;
+  }
+}

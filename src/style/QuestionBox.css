@@ -1,0 +1,92 @@
+.questionBox {
+  margin-top: 3rem;
+  padding-bottom: 1px;
+  box-shadow: 0px 3px 3px #dfdfdf;
+  border-radius: 5px;
+  margin: auto;
+  width: 90%;
+  position: relative;
+}
+
+.questionBox__title {
+  min-width: 270px;
+  font-size: 2rem;
+  color: var(--orange-dark);
+  text-align: center;
+  border: 1px solid #eeeeee;
+  padding: 12px 2.2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  width: fit-content;
+  outline: none;
+  position: relative;
+}
+
+.questionBox__icon .MuiSvgIcon-root {
+  display: none;
+}
+
+.questionBox__title:hover .questionBox__icon .MuiSvgIcon-root {
+  height: 35px;
+  border-radius: 50%;
+  color: #8d99a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  position: absolute;
+  right: -35px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0px 1px 2px #c4c4c4;
+}
+
+.questionBox__button {
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px;
+  width: 170px;
+  border-radius: 6px;
+  background: white;
+  border: 2px solid var(--orange-dark);
+  transition: 0.2s ease-in-out;
+}
+
+.questionBox__button div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questionBox__button div p {
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.questionBox__button:hover {
+  background: var(--orange-light);
+  color: var(--orange-dark);
+}
+
+.questionBox__button span {
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+}
+
+.questionBox__button span .MuiSvgIcon-root {
+  background: var(--orange-dark);
+  padding: 6px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border-radius: 50%;
+}
+
+.questionBox__containerBtn {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
