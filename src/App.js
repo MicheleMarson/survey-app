@@ -9,15 +9,6 @@ import {
 } from "react-router-dom";
 import Results from "./components/Results"
 
-// . Na prvom koraku se mogu dodavati i 
-// uređivati pitanja (tipa jednostruki/višestruki odabir
-// Na drugom koraku prikazuju se rezultati ispunjenih anketa 
-// (baza nije potrebna dovoljno je imati mockup podataka).
-// ⦁	Forma inicijalno sadrži jedno pitanje tipa 
-// jednostruki/višestruki odgovor 
-
-
-
 function App() {
   const [title, setTitle] = useState("Nova anketa")
   const [path, setPath] = useState("")
