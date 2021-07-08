@@ -22,8 +22,6 @@ function App() {
   })
   const [addAnswer, setAddAnswer] = useState([])
   const [answer, setAnswer] = useState("Odgovor")
-  // console.log("addAnswer>>>",addAnswer);
-  // console.log("answer>>>",answer);
   
   
   return (
